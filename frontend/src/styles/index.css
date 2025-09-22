@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+@theme {
+    --color-primary: #bda87f;
+    --background-color: #fff;
+    --text-color: #333;
+    --text-color-footer: #acacac;
+    --background-color-footer: #252525;
+
+    --font-sans: "Inter", sans-serif;
+    --font-heading: "Poppins", sans-serif;
+
+}
+
+
+@layer base {
+    html {
+        @apply font-sans bg-[--background-color] text-base;
+    }
+
+    h2 {
+        @apply text-2xl text-black font-bold;
+    }
+
+    h1 {
+        @apply text-3xl  text-black font-extrabold;
+    }
+}
