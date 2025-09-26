@@ -4,7 +4,7 @@ import { sequelize } from './models/index.js'
 
 const PORT = envConfig.PORT;
 
-
+// Connect db
 (async () => {
   try {
     await sequelize.authenticate();
