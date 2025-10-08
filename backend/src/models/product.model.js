@@ -11,7 +11,7 @@ const Product = sequelize.define('Product', {
         type: DataTypes.INTEGER,
         allowNull: false,
        },
-       desecription: {
+       description: {
         type: DataTypes.TEXT,
         allowNull: false
        },
@@ -24,7 +24,7 @@ const Product = sequelize.define('Product', {
        },
        categoryId: {
         type: DataTypes.INTEGER,
-        allowNull: false,
+        allowNull: true,
         references: {
             model: 'categories',
             key: 'id'

@@ -22,6 +22,10 @@ const Image = sequelize.define('Image', {
        sort_order: {
         type: DataTypes.INTEGER,
         defaultValue: 0
+       },
+       public_id: {
+        type: DataTypes.STRING(255),
+        allowNull: true,
        }
 }, {
     tableName: 'images',
